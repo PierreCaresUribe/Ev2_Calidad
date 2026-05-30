@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos - Inventario</title>
+  <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>ERP Seguridad LTDA</h1>
+    <nav><a href="../../index.html">Inicio</a> <a href="index.html">Inventario</a></nav>
+  </header>
+  <main>
+    <h2>Registro de Productos</h2>
+    <form>
+      <label>Código producto</label><input type="text" placeholder="PROD-001"/>
+      <label>Nombre</label><input type="text" placeholder="Nombre del producto"/>
+      <label>Grupo</label><select><option>Equipos</option><option>Uniformes</option><option>Accesorios</option></select>
+      <label>Subgrupo</label><input type="text" placeholder="Subgrupo..."/>
+      <label>Código de barra</label><input type="text" placeholder="7801234567890"/>
+      <label>Unidad de medida</label><select><option>Unidad</option><option>Caja</option><option>Kg</option><option>Metro</option></select>
+      <label>Stock mínimo</label><input type="number" placeholder="5"/>
+      <label>Stock máximo</label><input type="number" placeholder="100"/>
+      <label>Precio costo</label><input type="number" placeholder="0"/>
+      <label>Precio venta</label><input type="number" placeholder="0"/>
+      <button type="submit">Registrar Producto</button>
+    </form>
+    <br/>
+    <h3>Productos Registrados</h3>
+    <table>
+      <tr><th>Código</th><th>Nombre</th><th>Grupo</th><th>Stock</th><th>Precio</th></tr>
+      <tr><td>PROD-001</td><td>Radio comunicador</td><td>Equipos</td><td>25</td><td>$45.000</td></tr>
+      <tr><td>PROD-002</td><td>Uniforme guardia</td><td>Uniformes</td><td>50</td><td>$28.000</td></tr>
+    </table>
+  </main>
+</body>
+</html>

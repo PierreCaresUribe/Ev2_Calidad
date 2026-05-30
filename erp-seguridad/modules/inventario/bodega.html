@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bodega - Inventario</title>
+  <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>ERP Seguridad LTDA</h1>
+    <nav><a href="../../index.html">Inicio</a> <a href="index.html">Inventario</a></nav>
+  </header>
+  <main>
+    <h2>Entradas y Salidas de Bodega</h2>
+    <form>
+      <label>Tipo de movimiento</label>
+      <select><option>Entrada</option><option>Salida</option><option>Traslado entre bodegas</option></select>
+      <label>Bodega</label>
+      <select><option>Bodega Central</option><option>Bodega Norte</option><option>Bodega Sur</option></select>
+      <label>Producto</label>
+      <select><option>PROD-001 - Radio comunicador</option><option>PROD-002 - Uniforme guardia</option></select>
+      <label>Cantidad</label><input type="number" placeholder="0"/>
+      <label>Fecha</label><input type="date"/>
+      <label>Observación</label><textarea rows="2" placeholder="Motivo del movimiento..."></textarea>
+      <button type="submit">Registrar Movimiento</button>
+    </form>
+    <br/>
+    <h3>Últimos Movimientos</h3>
+    <table>
+      <tr><th>Fecha</th><th>Tipo</th><th>Bodega</th><th>Producto</th><th>Cantidad</th></tr>
+      <tr><td>01/05/2024</td><td>Entrada</td><td>Central</td><td>Radio comunicador</td><td>10</td></tr>
+      <tr><td>03/05/2024</td><td>Salida</td><td>Central</td><td>Uniforme guardia</td><td>5</td></tr>
+    </table>
+  </main>
+</body>
+</html>

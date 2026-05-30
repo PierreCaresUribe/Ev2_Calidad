@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ficha Empleado - RRHH</title>
+  <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>ERP Seguridad LTDA</h1>
+    <nav><a href="../../index.html">Inicio</a> <a href="index.html">RRHH</a></nav>
+  </header>
+  <main>
+    <h2>Ficha del Empleado</h2>
+    <form>
+      <h3>Datos Personales</h3>
+      <label>RUT</label><input type="text" placeholder="12.345.678-9"/>
+      <label>Nombre completo</label><input type="text" placeholder="Juan Pérez González"/>
+      <label>Fecha de nacimiento</label><input type="date"/>
+      <label>Dirección</label><input type="text" placeholder="Av. Principal 123"/>
+      <label>Teléfono</label><input type="tel" placeholder="+56 9 1234 5678"/>
+      <label>Email</label><input type="email" placeholder="empleado@empresa.cl"/>
+
+      <h3 style="margin-top:16px;">Datos Laborales</h3>
+      <label>Cargo</label><input type="text" placeholder="Guardia de Seguridad"/>
+      <label>Centro de Costo</label>
+      <select>
+        <option>Seleccione...</option>
+        <option>Zona Norte</option>
+        <option>Zona Centro</option>
+        <option>Zona Sur</option>
+      </select>
+      <label>Fecha de ingreso</label><input type="date"/>
+      <label>Tipo de contrato</label>
+      <select>
+        <option>Indefinido</option>
+        <option>Plazo fijo</option>
+        <option>Por obra</option>
+      </select>
+
+      <h3 style="margin-top:16px;">Previsión</h3>
+      <label>AFP</label>
+      <select>
+        <option>Capital</option><option>Cuprum</option><option>Habitat</option>
+        <option>PlanVital</option><option>ProVida</option><option>Modelo</option>
+      </select>
+      <label>Salud</label>
+      <select>
+        <option>Fonasa</option><option>Isapre Banmédica</option>
+        <option>Isapre Cruz Blanca</option><option>Isapre Consalud</option>
+      </select>
+
+      <button type="submit">Guardar Ficha</button>
+    </form>
+  </main>
+</body>
+</html>

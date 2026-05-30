@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control de Asistencia - RRHH</title>
+  <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>ERP Seguridad LTDA</h1>
+    <nav><a href="../../index.html">Inicio</a> <a href="index.html">RRHH</a></nav>
+  </header>
+  <main>
+    <h2>Control de Asistencia</h2>
+    <form>
+      <label>Empleado</label>
+      <select><option>Seleccione...</option><option>Juan Pérez</option><option>María González</option></select>
+      <label>Fecha</label><input type="date"/>
+      <label>Hora entrada</label><input type="time"/>
+      <label>Hora salida</label><input type="time"/>
+      <label>Estado</label>
+      <select><option>Presente</option><option>Atraso</option><option>Ausente</option><option>Licencia</option></select>
+      <button type="submit">Registrar</button>
+    </form>
+    <br/>
+    <h3>Registro del Mes</h3>
+    <table>
+      <tr><th>Empleado</th><th>Fecha</th><th>Entrada</th><th>Salida</th><th>Horas</th><th>Estado</th></tr>
+      <tr><td>Juan Pérez</td><td>01/05/2024</td><td>08:00</td><td>17:00</td><td>9</td><td>Presente</td></tr>
+      <tr><td>Juan Pérez</td><td>02/05/2024</td><td>08:15</td><td>17:00</td><td>8.75</td><td>Atraso</td></tr>
+      <tr><td>María González</td><td>01/05/2024</td><td>08:00</td><td>17:00</td><td>9</td><td>Presente</td></tr>
+    </table>
+  </main>
+</body>
+</html>

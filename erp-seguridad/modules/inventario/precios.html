@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Listas de Precios - Inventario</title>
+  <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>ERP Seguridad LTDA</h1>
+    <nav><a href="../../index.html">Inicio</a> <a href="index.html">Inventario</a></nav>
+  </header>
+  <main>
+    <h2>Gestión de Listas de Precios</h2>
+    <form>
+      <label>Lista de precios</label>
+      <select><option>Lista General</option><option>Lista Mayorista</option><option>Lista Promocional</option></select>
+      <label>Producto</label>
+      <select><option>PROD-001 - Radio comunicador</option><option>PROD-002 - Uniforme guardia</option></select>
+      <label>Precio base</label><input type="number" placeholder="0"/>
+      <label>% Descuento</label><input type="number" placeholder="0"/>
+      <label>Vigencia desde</label><input type="date"/>
+      <label>Vigencia hasta</label><input type="date"/>
+      <button type="submit">Guardar Precio</button>
+    </form>
+    <br/>
+    <h3>Precios Vigentes</h3>
+    <table>
+      <tr><th>Producto</th><th>Lista</th><th>Precio</th><th>Descuento</th><th>Vigencia</th></tr>
+      <tr><td>Radio comunicador</td><td>General</td><td>$45.000</td><td>0%</td><td>2024</td></tr>
+      <tr><td>Uniforme guardia</td><td>Mayorista</td><td>$24.000</td><td>15%</td><td>2024</td></tr>
+    </table>
+  </main>
+</body>
+</html>

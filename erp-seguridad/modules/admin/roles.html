@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roles y Permisos - Administración</title>
+  <link rel="stylesheet" href="../../css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>ERP Seguridad LTDA</h1>
+    <nav><a href="../../index.html">Inicio</a> <a href="index.html">Administración</a></nav>
+  </header>
+  <main>
+    <h2>Gestión de Roles y Permisos</h2>
+    <form>
+      <label>Nombre del rol</label><input type="text" placeholder="Ej: Administrador RRHH"/>
+      <label>Módulos con acceso</label>
+      <div style="background:white;padding:12px;border:1px solid #ccc;border-radius:4px;margin-bottom:16px;">
+        <label><input type="checkbox" checked/> Recursos Humanos</label><br/>
+        <label><input type="checkbox" checked/> Inventario y Bodega</label><br/>
+        <label><input type="checkbox"/> Portal Empleado</label><br/>
+        <label><input type="checkbox"/> Portal Cliente</label><br/>
+        <label><input type="checkbox"/> Administración</label>
+      </div>
+      <button type="submit">Guardar Rol</button>
+    </form>
+    <br/>
+    <h3>Roles Definidos</h3>
+    <table>
+      <tr><th>Rol</th><th>Módulos</th><th>Usuarios asignados</th></tr>
+      <tr><td>Administrador</td><td>Todos</td><td>1</td></tr>
+      <tr><td>RRHH</td><td>Recursos Humanos, Portal Empleado</td><td>2</td></tr>
+      <tr><td>Bodeguero</td><td>Inventario y Bodega</td><td>3</td></tr>
+      <tr><td>Cliente</td><td>Portal Cliente</td><td>10</td></tr>
+    </table>
+  </main>
+</body>
+</html>
