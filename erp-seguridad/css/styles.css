@@ -16,3 +16,10 @@ input, select, textarea { width: 100%; padding: 8px; margin-bottom: 16px; border
 button { background: #1F4E79; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 0.95rem; }
 button:hover { background: #2E75B6; }
 .card { background: white; padding: 20px; border-radius: 6px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+@media (max-width: 768px) {
+  nav a { display: block; margin: 4px 0; }
+  table { font-size: 0.85rem; }
+  form { padding: 16px; }
+  .card { width: 100% !important; }
+  input, select, textarea { font-size: 1rem; }
+}
